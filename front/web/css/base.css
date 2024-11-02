@@ -83,3 +83,58 @@ hr {
     width: 50%;
     margin: 20px;
 }
+
+
+alert, info, error {
+    /* position: absolute; */
+    margin: 8px;
+
+    top: 25%;
+    width: 75%;
+    height: fit-content;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+alert {
+    background-color: rgba(255, 227, 18, 0.2);
+    color: rgb(255, 255, 194);
+}
+
+info {
+    color: rgb(199, 235, 255);
+    background-color: rgba(61, 157, 243, 0.2);
+}
+
+error {
+    color: rgb(255, 222, 222);
+    background-color: rgba(255, 108, 108, 0.2);
+}
+
+span[menu] {
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+span[menu] item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+span[menu] item button {
+    height: fit-content;
+}
+
+span[menu] item content {
+    display: none;
+    margin-left: 20px;
+}
+
+img {
+    padding: 10px;
+}
