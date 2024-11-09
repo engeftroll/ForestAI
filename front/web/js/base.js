@@ -18,21 +18,6 @@ function ready() {
             document.body.appendChild(new_alert);
         }
 
-
-        if (e.target.attributes["show_content"]) {
-            var can_we_display = e.target.attributes["show_content"].value;
-            var content_element = e.target.parentElement.getElementsByTagName("content")[0];
-
-            if (can_we_display == "false") {
-                e.target.setAttribute("show_content", "true");
-                content_element.style.display = "none";
-            }
-            else {
-                e.target.setAttribute("show_content", "false");
-                content_element.style.display = "block";
-            }
-        }
-
         // Если нужно редиректнуть, то он редиректнет.
         if (e.target.attributes["redirect_to"]) {
             document.location.href = e.target.attributes["redirect_to"].value;
@@ -49,7 +34,7 @@ function ready() {
         }
 
     });
-  }
+}
 
 
 // Все скрипты начнут работать после загрузки страницы.
