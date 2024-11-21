@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        
+        <title>Изображение {11.11.2024 12:30 00:00 '1'}</title>
+
+        <link href="{{ url_for('static', path='./css/base.css') }}" rel="stylesheet">
+        <script src="{{ url_for('static', path='./js/base.js') }}"></script>
+        <script src="{{ url_for('static', path='./js/opening_archive.js') }}"></script>
+    </head>
+    <body>
+        <button redirect_to="/pictures_list">Назад</button>
+        <h1> Снимок {11.11.2024 12:30 00:00 '1'}</h1>
+        <h4>ID: {{ image_id }}</h4>
+
+        <img src="./1/augmentation.png" />
+        <span menu>
+            <item>
+                <button show_content>Процентный состав леса</button>
+                <content>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Состояние</th>
+                                <th>Цвет на карте</th>
+                                <th>Процент от всего леса</th>
+                            </tr>
+                            <tr>
+                                <td>Лес, о котором есть информация</td>
+                                <td>Зелёный</td>
+                                <td>34%</td>
+                            </tr>
+                            <tr>
+                                <td>Лес, о котором нет информации</td>
+                                <td>Красный</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr>
+                                <td>Вырубка леса</td>
+                                <td>Синий</td>
+                                <td>6%</td>
+                            </tr>
+                        </table>
+                        <img src="./1/layers_union.png"/>
+                    </div>
+                </content>
+            </item>
+            <item>
+                <button show_content>Ареалы леса по типам</button>
+                <content>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Порода леса</th>
+                                <th>Процент от всего леса</th>
+                            </tr>
+                            <tr>
+                                <td>Лиственничные леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Сосновые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Берёзовые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Еловые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Кедровые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Осиновые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Пихтовые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Дубовые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Липовые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+                            <tr>
+                                <td>Грабовые леса</td>
+                                <td>9.09%</td>
+                            </tr>
+
+                        </table>
+                        <img src="./1/rgb_composition.png"/>
+                    </div>
+                </content>
+            </item>
+            <item>
+                <button show_content>Ареалы леса по возрасту</button>
+                <content>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Возраст леса</th>
+                                <th>Процент от всего леса</th>
+                            </tr>
+                            <tr>
+                                <td>10-лет</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>25-лет</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>40-лет</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>100-лет</td>
+                                <td>25%</td>
+                            </tr>
+                        </table>
+                        <img src="./1/layers_union.png"/>
+                    </div>
+                </content>
+            </item>
+            <item>
+                <button show_content>Ареалы леса по запасам древесины</button>
+                <content>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Порода леса</th>
+                                <th>Процент от всего леса</th>
+                            </tr>
+                            <tr>
+                                <td>Кедровые</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>Липовые</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>Грабовые</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>Осиновые</td>
+                                <td>25%</td>
+                            </tr>
+                        </table>
+                        <img src="./1/forest_cutting_visualization.png"/>
+                    </div>
+                </content>
+            </item>
+            <item>
+                <button show_content>Зона вырубки леса и площадь таких зон</button>
+                <content>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Зона</th>
+                                <th>Цвет на карте</th>
+                                <th>Площадь такой зоны</th>
+                            </tr>
+                            <tr>
+                                <td>Нетронутая</td>
+                                <td>Зелёный</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td>Вырубленные</td>
+                                <td>Красный</td>
+                                <td>10%</td>
+                            </tr>
+                        </table>
+                        <img src="1/forest_cutting_zones.png"/>
+                    </div>
+                </content>
+            </item>
+        </span>
+    </body>
+</html>

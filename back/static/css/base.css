@@ -1,0 +1,160 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(250, 250, 250);
+    background-color: rgb(14, 17, 23);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 14px;
+    font-weight: normal;
+    width: 30rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div input {
+    border-radius: 0.5rem;
+    height: 2.5rem;
+}
+
+input {
+    color: rgb(250, 250, 250);
+    background-color: rgb(38, 39, 48);
+    border: none;
+    border-color: rgb(38, 39, 48);
+    border-style: solid;
+    border-width: 1px;
+}
+
+input:focus {
+    border-color: rgb(255, 75, 75);
+    outline: none;
+}
+
+button {
+    background-color: rgb(19, 23, 32);
+    font-size: 16px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 0.5rem;
+    padding: calc(-1px + 1rem);
+
+    width: fit-content;
+
+    color: rgb(250, 250, 250);
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 75, 75);
+    color: rgb(255, 75, 75);
+}
+
+button:active {
+    background-color: rgb(255, 75, 75);
+    color: whitesmoke;
+}
+
+span {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 0.5rem;
+    padding: 20px;
+    margin: 15px;
+
+    min-width: 200px;
+}
+
+span h5 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: normal;
+}
+
+hr {
+    width: 50%;
+    margin: 20px;
+}
+
+
+alert, info, error {
+    /* position: absolute; */
+    margin: 8px;
+
+    top: 25%;
+    width: 75%;
+    height: fit-content;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+alert {
+    background-color: rgba(255, 227, 18, 0.2);
+    color: rgb(255, 255, 194);
+}
+
+info {
+    color: rgb(199, 235, 255);
+    background-color: rgba(61, 157, 243, 0.2);
+}
+
+error {
+    color: rgb(255, 222, 222);
+    background-color: rgba(255, 108, 108, 0.2);
+}
+
+span[menu] {
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+span[menu] item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+span[menu] item button {
+    height: fit-content;
+}
+
+span[menu] item content {
+    display: none;
+    margin-left: 20px;
+}
+
+img {
+    padding: 10px;
+    max-width: 1080px;
+}
+
+td {
+    text-align: center;
+}
+th {
+    margin: 0;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(61, 157, 243, 0.2);
+}
+
+content div {
+    display: flex;
+    flex-direction: row;
+
+    align-items: start;
+    justify-content: center;
+}

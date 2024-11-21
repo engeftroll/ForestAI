@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        
+        <title>Регистрация</title>
+        <link href="{{ url_for('static', path='./css/base.css') }}" rel="stylesheet">
+        <script src="{{ url_for('static', path='./js/base.js') }}"></script>
+    </head>
+    <body>
+        <h1>Войти</h1>
+        <button redirect_to="{{ url_for('login') }}">У меня уже есть аккаунт</button>
+        <h1>Регистрация</h1>
+        <form method="post">
+            <div>
+                <label>ФИО</label>
+                <input value="" type="text" name="username"/>
+            </div>            
+            
+            <div>
+                <label>Компания</label>
+                <input value="" type="text" name="company"/>
+            </div>            
+            
+            <div>
+                <label>Должность</label>
+                <input value="" type="text" name="job"/>
+            </div>            
+            
+            <div>
+                <label>Почта</label>
+                <input value="" type="email" name="email"/>
+            </div>
+            
+            <div>
+                <label>Пароль</label>
+                <input value="" type="password" name="password"/>
+            </div>
+
+            <!-- <button type="submit">Зарегистрироваться</button> -->
+        </form>
+        <button registration_submit>Зарегистрироваться</button>
+    </body>
+</html>

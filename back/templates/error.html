@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        
+        <title>Ошибка {code}</title>
+        <link href="{{ url_for('static', path='./css/base.css') }}" rel="stylesheet">
+        <script src="{{ url_for('static', path='./js/base.js') }}"></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: linear-gradient(135deg, #ff4b2b, #ff416c);
+                color: #fff;
+                text-align: center;
+            }
+            .error-container {
+                max-width: 600px;
+                padding: 20px;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 10px;
+                color: #ffcccc;
+            }
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+            .button-container {
+                margin-top: 20px;
+            }
+            .button {
+                background-color: #fff;
+                color: #ff416c;
+                border: none;
+                padding: 12px 24px;
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 25px;
+                margin: 0 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            .button:hover {
+                background-color: #ff416c;
+                color: #fff;
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ошибка: 404</h1>
+        <p>Описание: тут должно быть фото леса, но разработчики иногда нюхают траву</p>
+        <span>
+            <button redirect_to="./login">Войти в систему</button>
+            <button redirect_to="./registration">Регистрация</button>
+            <button redirect_to="/pictures_list">Назад</button>
+        </span>
+    </body>
+</html>
+
+<!--        ### Примеры для вызова виджетов.-->
+<!--        <alert>⚠️ My alert text</alert>-->
+<!--        <error>❌ My error text</error>-->
+<!--        <info>ℹ️ My information text</info>-->

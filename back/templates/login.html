@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        
+        <title>Вход</title>
+        <link href="{{ url_for('static', path='./css/base.css') }}" rel="stylesheet">
+        <script src="{{ url_for('static', path='./js/base.js') }}"></script>
+    </head>
+    <body>
+        <h1>Регистрация</h1>
+        <button redirect_to="./registration">У меня еще нет аккаунта</button>
+        <h1>Авторизация</h1>
+        <form method="post">
+            <div>
+                <label>Почта</label>
+                <input value="" type="email" name="email"/>
+            </div>
+            
+            <div>
+                <label>Пароль</label>
+                <input value="" type="password" name="password"/>
+            </div>
+
+            <!-- <button type="submit">Войти</button> -->
+        </form>
+        <button redirect_to="./pictures_list">Войти</button>
+    </body>
+</html>
