@@ -72,11 +72,23 @@ span {
     margin: 15px;
 
     min-width: 200px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+span img {
+    width: 200px;
+    margin: auto;
+}
+span button {
+    margin: auto
 }
 
 span h5 {
     font-family: "Source Code Pro", monospace;
     font-weight: normal;
+    margin-top: 0;
 }
 
 hr {
