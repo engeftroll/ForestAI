@@ -160,7 +160,8 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(61, 157, 243, 0.2);
+    /* background-color: rgba(61, 157, 243, 0.2); */
+    background-color: rgb(255, 75, 75);
 }
 
 content div {
